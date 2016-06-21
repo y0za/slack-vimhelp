@@ -1,0 +1,15 @@
+{
+  "name": "slack_vimhelp",
+  "version": "0.0.1",
+  "description": "vimhelp slack bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "yoza (y0za)",
+  "license": "Zlib",
+  "dependencies": {
+    "botkit": "^0.2.0",
+    "vimhelp": "^1.0.1"
+  }
+}
