@@ -1,0 +1,8 @@
+version: '2'
+services:
+  bot:
+    build: .
+    environment:
+      - NODE_ENV=production
+      - SLACK_TOKEN
+    entrypoint: node src/index.js

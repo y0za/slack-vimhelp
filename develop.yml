@@ -1,0 +1,12 @@
+version: '2'
+services:
+  bot_develop:
+    build: ./develop
+    environment:
+      - NODE_ENV=development
+      - SLACK_TOKEN
+    entrypoint: node src/index.js
+    volumes:
+      - ./node_modules:/usr/src/app/node_modules/:ro
+      - ./src:/usr/src/app/src:ro
+      - ./package.json:/usr/src/app/package.json:ro
